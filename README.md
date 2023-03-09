@@ -35,3 +35,13 @@ La especificacion del formato de solicitud y respuesta cumplen con los especific
 }
 ]
 }`
+
+## Instrucciones para docker
+
+se debe correr el siguiente comando
+
+`docker build . -t co.com.soyyo.entity.filter-dev-1_0_0   `
+
+y posterior a ello en el que se puede seleccionar el puerto que se desee exponer
+
+`docker run -p 8000:3000 co.com.soyyo.entity.filter-dev-1_0_0 `
