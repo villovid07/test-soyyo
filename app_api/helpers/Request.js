@@ -4,6 +4,11 @@ const { messages } = require("./messages");
 
 const CODE_SUCCESS = process.env.CODE_SUCCESS;
 
+/**
+ * Funcion que permite realizar peticiones a otros servicios
+ * @param {*} config
+ * @returns
+ */
 const doRequest = (config) => {
   return new Promise(async (resolve, reject) => {
     try {

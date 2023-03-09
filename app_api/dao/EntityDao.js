@@ -4,6 +4,12 @@ const { formatEntity } = require("../helpers/Validations");
 
 const url = process.env.URL;
 
+/**
+ * Funcion que permite hacer la llamada a la peticion y consolidar los resultados de la
+ * busqueda de una entidad en particular
+ * @param {*} code
+ * @returns
+ */
 const findEntityByCode = (code) => {
   return new Promise(async (resolve, reject) => {
     try {

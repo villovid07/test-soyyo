@@ -1,8 +1,13 @@
 const { findEntityByCode } = require("../dao/EntityDao");
 const { messages } = require("../helpers/messages");
-const { sendJsonResponse } = require("../helpers/respuesta");
+const { sendJsonResponse } = require("../helpers/Respuesta");
 const { validateParameters } = require("../helpers/Validations");
 
+/**
+ * Filtro de entidades metodo que se expone para realizar la busqueda
+ * @param {*} req
+ * @param {*} res
+ */
 const filterEntitiesByCode = async (req, res) => {
   try {
     let arrEntitiesResultado = [];
@@ -18,6 +23,11 @@ const filterEntitiesByCode = async (req, res) => {
   }
 };
 
+/**
+ * Funcion que permite construir las entidades que se filtran
+ * @param {*} body
+ * @returns
+ */
 const buildFilterEntities = (body) => {
   var arrFilterEntities = [];
   return new Promise(async (resolve, reject) => {
