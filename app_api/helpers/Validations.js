@@ -44,4 +44,5 @@ const formatEntity = (entityOrigin) => {
 module.exports = {
   validateParameters,
   formatEntity,
+  validateEveryParameter,
 };
